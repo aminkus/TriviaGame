@@ -9,9 +9,14 @@
 $(document).ready(function () {
     //play audio
     var audio = new Audio("1-10 Maze.mp3");
-    
-
-    //hides question form
+    //clear radio buttons
+    $('input[name=question1]').attr('checked',false);
+    $('input[name=question2]').attr('checked',false);
+    $('input[name=question3]').attr('checked',false);
+    $('input[name=question4]').attr('checked',false);
+    $('input[name=question5]').attr('checked',false);
+5
+5   //hides question form
     $("#questionForm").hide();
     $("#showTimer").hide();
 
@@ -44,9 +49,17 @@ $(document).ready(function () {
         $("#questionForm").show();
         //show timer
         run();
-
+        
     })
 
+    //if user finishes before timer is done they can submit answers and display results
+    $("#submit").on("click", function (event) {
+        //prevent browser from refreshing when submit button is clicked
+        event.preventDefault();
+        stop();
+        
+
+    })
     //set up function to run timer
     function start() {
         //countdown timer
@@ -109,14 +122,6 @@ $(document).ready(function () {
         $("#emptyDiv2").append(displayDiv2);
 
     }
-    //if user finishes before timer is done they can submit answers and display results
-    $("#submit").on("click", function (event) {
-        //prevent browser from refreshing when submit button is clicked
-        event.preventDefault();
-        stop();
-        displayResults();
-
-    })
 
 
 
