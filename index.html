@@ -21,175 +21,161 @@
                 <hr>
                 <!-- start button that shows when page is loaded and then disappears after pressed -->
                 <button id="startButton" type="button" class="btn btn-success btn-lg">START</button>
-                <button id="showTimer" type="button" class="btn btn-danger"><h2>90<h2</h2> </button> 
-            </div> 
-        </div> 
-    </div> 
+                <button id="showTimer" type="button" class="btn btn-danger">
+                    <h2>90</h2>
+                </button>
+            </div>
+        </div>
+    </div>
     <!-- container holding questions and answer options-->
-                            <div class="container text-center">
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <div id="emptyDiv"></div>
-                                        <div id="emptyDiv2"></div>
-                                    </div>
-                                </div>
+    <div class="container text-center">
+        <div class="row">
+            <div class="col-md-12">
+                <div id="emptyDiv"></div>
+                <div id="emptyDiv2"></div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <form id="questionForm">
+                    <h4>1. What was Treys senior thesis about?</h4>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="question1" id="question1" value="1" checked>
+                        <label id="color" class="form-check-label" for="exampleRadios1">
+                            Icculus the Prophet
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="question1" id="question1" value="2" checked>
+                        <label id="color" class="form-check-label" for="exampleRadios1">
+                            The White Tape
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="question1" id="question1" value="3" checked>
+                        <label id="color" class="form-check-label" for="exampleRadios1">
+                            Gamehendge
+                        </label>
+                    </div>
+                    <br>
+                    <h4>2. What year did Page first play with the band?</h4>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="question2" id="question2" value="4" checked>
+                        <label id="color" class="form-check-label" for="exampleRadios1">
+                            1983
+                        </label>
+
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="question2" id="question2" value="5" checked>
+                        <label id="color" class="form-check-label" for="exampleRadios1">
+                            1984
+                        </label>
+
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="question2" id="question2" value="6" checked>
+                        <label id="color" class="form-check-label" for="exampleRadios1">
+                            1985
+                        </label>
+                    </div>
+                    <br>
+                    <h4>3. What song has been played live the most by Phish?</h4>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="question3" id="question3" value="7" checked>
+                        <label id="color" class="form-check-label" for="exampleRadios1">
+                            You Enjoy Myself
+                        </label>
+
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="question3" id="question3" value="8" checked>
+                        <label id="color" class="form-check-label" for="exampleRadios1">
+                            Golgi Apparatus
+                        </label>
+
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="question3" id="question3" value="9" checked>
+                        <label id="color" class="form-check-label" for="exampleRadios1">
+                            Cavern
+                        </label>
+                    </div>
+                    <br>
+                    <h4>4. Who is the focus character in the live rarity "Harpua"?
+                    </h4>
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="question4" id="question4" value="10" checked>
+                        <label id="color" class="form-check-label" for="exampleRadios1">
+                            Jimmy
+                        </label>
+
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="question4" id="question4" value="11" checked>
+                        <label id="color" class="form-check-label" for="exampleRadios1">
+                            Timmy
+                        </label>
+
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="question4" id="question4" value="12" checked>
+                        <label id="color" class="form-check-label" for="exampleRadios1">
+                            Henry
+                        </label>
+                    </div>
+                    <br>
+                    <h4>5. What is the name of Trey's primary songwriting partner?
+                    </h4>
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="question5" id="question5" value="13" checked>
+                        <label id="color" class="form-check-label" for="exampleRadios1">
+                            Robert Hunter
+                        </label>
+
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="question5" id="question5" value="14" checked>
+                        <label id="color" class="form-check-label" for="exampleRadios1">
+                            Tom Marshall
+                        </label>
+
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="question5" id="question5" value="15" checked>
+                        <label id="color" class="form-check-label" for="exampleRadios1">
+                            none of these
+                        </label>
+
+                    </div>
+                    <br>
+                    <br>
+                    <div class="container text-center">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <button id="submit" class="btn btn-success btn-lg" type="submit">Submit</button>
                             </div>
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <form id="questionForm">
-                                            <h4>1. What was Treys senior thesis about?</h4>
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="radio" name="question1"
-                                                    id="question1" value="1" checked>
-                                                <label id="color" class="form-check-label" for="exampleRadios1">
-                                                    Icculus the Prophet
-                                                </label>
-                                            </div>
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="radio" name="question1"
-                                                    id="question1" value="2" checked>
-                                                <label id="color" class="form-check-label" for="exampleRadios1">
-                                                    The White Tape
-                                                </label>
-                                            </div>
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="radio" name="question1"
-                                                    id="question1" value="3" checked>
-                                                <label id="color" class="form-check-label" for="exampleRadios1">
-                                                    Gamehendge
-                                                </label>
-                                            </div>
-                                            <br>
-                                            <h4>2. What year did Page first play with the band?</h4>
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="radio" name="question2"
-                                                    id="question2" value="4" checked>
-                                                <label id="color" class="form-check-label" for="exampleRadios1">
-                                                    1983
-                                                </label>
-
-                                            </div>
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="radio" name="question2"
-                                                    id="question2" value="5" checked>
-                                                <label id="color" class="form-check-label" for="exampleRadios1">
-                                                    1984
-                                                </label>
-
-                                            </div>
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="radio" name="question2"
-                                                    id="question2" value="6" checked>
-                                                <label id="color" class="form-check-label" for="exampleRadios1">
-                                                    1985
-                                                </label>
-                                            </div>
-                                            <br>
-                                            <h4>3. What song has been played live the most by Phish?</h4>
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="radio" name="question3"
-                                                    id="question3" value="7" checked>
-                                                <label id="color" class="form-check-label" for="exampleRadios1">
-                                                    You Enjoy Myself
-                                                </label>
-
-                                            </div>
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="radio" name="question3"
-                                                    id="question3" value="8" checked>
-                                                <label id="color" class="form-check-label" for="exampleRadios1">
-                                                    Golgi Apparatus
-                                                </label>
-
-                                            </div>
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="radio" name="question3"
-                                                    id="question3" value="9" checked>
-                                                <label id="color" class="form-check-label" for="exampleRadios1">
-                                                    Cavern
-                                                </label>
-                                            </div>
-                                            <br>
-                                            <h4>4. Who is the focus character in the live rarity "Harpua"?
-                                            </h4>
-                                            
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="radio" name="question4"
-                                                    id="question4" value="10" checked>
-                                                <label id="color" class="form-check-label" for="exampleRadios1">
-                                                    Jimmy
-                                                </label>
-
-                                            </div>
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="radio" name="question4"
-                                                    id="question4" value="11" checked>
-                                                <label id="color" class="form-check-label" for="exampleRadios1">
-                                                    Timmy
-                                                </label>
-
-                                            </div>
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="radio" name="question4"
-                                                    id="question4" value="12" checked>
-                                                <label id="color" class="form-check-label" for="exampleRadios1">
-                                                    Henry
-                                                </label>
-                                            </div>
-                                            <br>
-                                            <h4>5. What is the name of Trey's primary songwriting partner?
-                                            </h4>
-
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="radio" name="question5"
-                                                    id="question5" value="13" checked>
-                                                <label id="color" class="form-check-label" for="exampleRadios1">
-                                                    Robert Hunter
-                                                </label>
-
-                                            </div>
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="radio" name="question5"
-                                                    id="question5" value="14" checked>
-                                                <label id="color" class="form-check-label" for="exampleRadios1">
-                                                    Tom Marshall
-                                                </label>
-
-                                            </div>
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="radio" name="question5"
-                                                    id="question5" value="15" checked>
-                                                <label id="color" class="form-check-label" for="exampleRadios1">
-                                                    none of these
-                                                </label>
-
-                                            </div>
-                                            <br>
-                                            <br>
-                                            <div class="container text-center">
-                                                <div class="row">
-                                                    <div class="col-md-12">
-                                                        <button id="submit" class="btn btn-success btn-lg"
-                                                            type="submit">Submit</button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="container text-center">
-                                                <div class="row">
-                                                    <div class="col-md-12">
-                                                        <h1></h1>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                        </form>
-                                    </div>
-                                </div>
+                        </div>
+                    </div>
+                    <div class="container text-center">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h1></h1>
                             </div>
+                        </div>
+                    </div>
 
-                            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-                            <script src="assets/javascript/app.js"></script>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="assets/javascript/app.js"></script>
 
 </body>
 
