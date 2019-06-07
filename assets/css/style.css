@@ -1,0 +1,26 @@
+body {
+    background-image: url("http://smedia.pnet-static.com/img/2018-11-03%20Vegas4%20Phish%20stage%20Rene%20Huemer.jpg");
+    background-size: cover;
+}
+
+#title {
+    color: white;
+    font-size: 5em;
+    font-family: 'Permanent Marker', cursive;
+}
+
+#emptyDiv, #emptyDiv2 {
+    color: white;
+    font-family: 'Permanent Marker', cursive;
+}
+
+h4 {
+    color: white;
+    font-family: 'Special Elite', cursive;
+}
+
+#color {
+    color: white;
+    font-weight: bolder;
+}
+  
