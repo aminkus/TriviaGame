@@ -17,7 +17,7 @@ $(document).ready(function () {
 
 
     //coutdown timer
-    var number = 10;
+    var number = 90;
     //create variables to store right and wrong answers
     var correctAnswers = 0;
     var incorrectAnswers = 0;
