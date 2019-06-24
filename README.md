@@ -5,5 +5,5 @@ This project involved generating a series of questions for the user to answer as
 ## Getting Started
 
 To start the game, the user opens the html document in which a audio file will being to play and a start button is displayed. The user clicks the start button, which is then hidden, and a timer and question form appears. Results are the displayed by one of two ways, either the user clicks the submit button or the timer runs out.
-
-
+### Deployed Link
+https://aminkus.github.io/TriviaGame/
